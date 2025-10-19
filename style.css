@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-padrao: "Roboto", sans-serif;
+    --text-white: white;
+    --text-black: black;
+    --text-orange: rgb(228, 161, 38);
+    --text-roxo: rgb(83, 38, 141);
+    --fundo-roxo: rgb(83, 38, 141);
+    --fundo-roxo-escuro: rgb(61, 28, 105);
+    --fundo-roxo-claro: rgb(114, 52, 196);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-padrao);
+    color: var(--text-white);
+}
+
+.cabecalho {
+    padding: 2px 7px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--fundo-roxo);
+    z-index: 5;
+}
+
+/*-----------Menu Lateral---------------*/
+
+.menu-lateral {
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -150px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--fundo-roxo-escuro);
+    z-index: 6;
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+/* .image-fundo {
+    height: 20px;
+    width: 20px;
+} */
+
+.menu-lateral .fundo img {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: transparent;
+    z-index: 5;
+}
+
+.list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 60px;
+    list-style: none;
+    z-index: 6;
+}
+
+.list-item {
+    margin: 5px;
+    border-radius: 10px;
+    padding: 0.3rem;
+    background-color: rgba(114, 52, 196, 0.541);
+}
+
+.list-item:hover {
+    cursor: pointer;
+    background-color: rgba(114, 52, 196, 0.863);
+}
+
+.list-item a {
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+/*------------BotaoCabeçalho--------------*/ 
+
+.btn-cabecalho {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.btn-cabecalho:hover {
+    background-color: var(--fundo-roxo-claro);
+}
+
+.btn-cabecalho i {
+    font-size: 1rem;
+}
+
+/*------------LogoCabeçalho--------------*/ 
+
+.cabecalho-logo {
+    text-transform: uppercase;
+}
+
+.cabecalho-logo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-orange);
+}
+
+/*------------MenuCabeçalho--------------*/ 
+
+.cabecalho-menu {
+    list-style: none;
+}
+
+.cabecalho-menu li a {
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-decoration: none;
+    /* background-color: black; */
+}
+
+.cabecalho-menu li a:hover {
+    transform: translateX(1px) scale(1.1);
+    box-shadow:  2px 0px 5px var(--text-black);
+}
+
+.cabecalho-menu li a i {
+    font-size: 1.7rem;
+}
+
+.container {
+    background-color: var(--fundo-roxo-escuro);
+}
+
+.main-wallpaper {
+    
+}
+
+.main-wallpaper img {
+    display: block;
+    margin: auto;
+}
