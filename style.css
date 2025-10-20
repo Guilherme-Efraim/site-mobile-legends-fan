@@ -19,6 +19,25 @@
     color: var(--text-white);
 }
 
+/*----------Pelicula de Proteção------------*/
+
+.pelicula-escura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 4;
+}
+
+.pelicula-escura.ativo {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*----------------------*/
+
 .cabecalho {
     padding: 2px 7px;
     width: 100%;
@@ -37,16 +56,16 @@
 /*-----------Menu Lateral---------------*/
 
 .menu-lateral {
-    width: 150px;
+    width: 200px;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -150px;
+    left: -200px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     background-color: var(--fundo-roxo-escuro);
-    z-index: 6;
+    z-index: 7;
 }
 
 .menu-lateral.ativo {
@@ -66,7 +85,7 @@
     width: 100%;
     object-fit: cover;
     background-color: transparent;
-    z-index: 5;
+    z-index: 6;
 }
 
 .list {
@@ -76,7 +95,7 @@
     width: 100%;
     margin-top: 60px;
     list-style: none;
-    z-index: 6;
+    z-index: 7;
 }
 
 .list-item {
@@ -103,13 +122,13 @@
 /*------------BotaoCabeçalho--------------*/ 
 
 .btn-cabecalho {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     margin-left: 10px;
     border: none;
     background-color: transparent;
-    z-index: 7;
+    z-index: 8;
     cursor: pointer;
 }
 
@@ -159,10 +178,6 @@
 
 .container {
     background-color: var(--fundo-roxo-escuro);
-}
-
-.main-wallpaper {
-    
 }
 
 .main-wallpaper img {
